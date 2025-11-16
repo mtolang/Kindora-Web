@@ -5,9 +5,11 @@ import member1 from './asset/Member1-Canon.jpg'
 import member2 from './asset/Member2-Adan.jpg'
 import member3 from './asset/Member3-Tolang.png'
 import member4 from './asset/Member4-Ravago.jpg'
-import apkFile from './asset/app-release.apk?url'
 import { db } from './firebase'
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
+
+// Firebase Storage APK URL
+const apkFile = 'https://firebasestorage.googleapis.com/v0/b/kindora-baed6.firebasestorage.app/o/App%2Fapp-release.apk?alt=media&token=d29453bd-994f-4adb-a426-84446c9de034'
 
 function App() {
   const [selectedMember, setSelectedMember] = useState(1);
